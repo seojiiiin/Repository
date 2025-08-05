@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //✅ 루트 경로에 들어오면 test.html 서빙
 app.get('/', (req, res) => {
-  res.sendFile(path.join(dirname, 'public', 'test.html'));
+  res.sendFile(path.join(__dirname, 'public', 'test.html'));
 });
 
 app.get('/', (req, res) => {
